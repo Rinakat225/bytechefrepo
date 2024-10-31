@@ -15,7 +15,7 @@ const ConditionNode = ({data, id}: NodeProps) => {
     const handleNodeClick = useNodeClickHandler(data, id);
 
     return (
-        <div className="relative flex min-w-[240px] cursor-pointer items-center justify-center">
+        <div className="relative flex min-w-60 cursor-pointer items-center justify-center">
             <Button
                 className={twMerge(
                     'h-18 w-18 rounded-md border-2 border-gray-300 bg-white p-4 shadow hover:border-blue-200 hover:bg-blue-200 hover:shadow-none',
@@ -37,7 +37,7 @@ const ConditionNode = ({data, id}: NodeProps) => {
             <span className="absolute left-72 top-3 px-2 py-0.5 text-sm font-bold uppercase text-gray-500">False</span>
 
             <Handle
-                className={twMerge('left-[36px]', styles.handle)}
+                className={twMerge('left-node-handle-placement', styles.handle)}
                 isConnectable={false}
                 position={Position.Top}
                 type="target"

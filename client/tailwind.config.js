@@ -73,6 +73,9 @@ module.exports = {
                     5: 'hsl(var(--chart-5))',
                 },
             },
+            inset: {
+                'node-handle-placement': '36px',
+            },
             keyframes: {
                 'accordion-down': {
                     from: {
@@ -91,6 +94,9 @@ module.exports = {
                     },
                 },
             },
+            margin: {
+                'placeholder-node-position': '22px',
+            },
             maxHeight: {
                 'select-content-available-height': 'var(--radix-select-content-available-height)',
                 'select-content-available-height-1/2': 'calc(var(--radix-select-content-available-height) / 2)',
@@ -102,10 +108,14 @@ module.exports = {
                 'combo-box-popper-anchor-width': 'var(--radix-popper-anchor-width)',
                 'select-trigger-width': 'var(--radix-select-trigger-width)',
             },
+            padding: {
+                'property-input-position': '50px',
+            },
             screens: {
                 '3xl': '1792px',
             },
             width: {
+                'desktop-sidebar-width': '56px',
                 'workflow-nodes-popover-actions-menu-width': '400px',
                 'workflow-nodes-popover-component-menu-width': '330px',
                 'workflow-nodes-popover-menu-width': '730px',

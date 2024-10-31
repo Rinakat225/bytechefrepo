@@ -140,7 +140,7 @@ const WorkflowNode = ({data, id}: NodeProps) => {
 
     return (
         <div
-            className="relative flex min-w-[240px] cursor-pointer items-center justify-center"
+            className="relative flex min-w-60 cursor-pointer items-center justify-center"
             data-nodeType={data.trigger ? 'trigger' : 'task'}
             onMouseOut={() => setIsHovered(false)}
             onMouseOver={() => setIsHovered(true)}
@@ -205,14 +205,14 @@ const WorkflowNode = ({data, id}: NodeProps) => {
             </div>
 
             <Handle
-                className={twMerge('left-[36px]', styles.handle)}
+                className={twMerge('left-node-handle-placement', styles.handle)}
                 isConnectable={false}
                 position={Position.Top}
                 type="target"
             />
 
             <Handle
-                className={twMerge('left-[36px]', styles.handle)}
+                className={twMerge('left-node-handle-placement', styles.handle)}
                 isConnectable={false}
                 position={Position.Bottom}
                 type="source"
