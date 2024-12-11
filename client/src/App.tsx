@@ -177,19 +177,6 @@ function App() {
     }, [getApplicationInfo]);
 
     useEffect(() => {
-        if (showLogin) {
-            navigate('/login');
-        }
-    }, [showLogin, navigate]);
-
-    useEffect(() => {
-        if (sessionHasBeenFetched && !authenticated) {
-            navigate('/login');
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [authenticated, sessionHasBeenFetched]);
-
-    useEffect(() => {
         if (!authenticated) {
             analytics.reset();
             helpHub.shutdown();
